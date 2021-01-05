@@ -7,8 +7,8 @@ function ProjectList({projects}) {
         <div className="project-list section">
             {projects && projects.map((project) =>{
                 return (
-                    <Link to={`/project/${project.id}`}>
-                        <ProjectSummary project={project} id={project.id} />
+                    <Link to={`/project/${project.id}`} id={project.id}>
+                        <ProjectSummary project={project} />
                     </Link>
                 )
             })}
