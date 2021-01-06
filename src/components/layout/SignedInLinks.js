@@ -11,7 +11,9 @@ const SignedInLinks = (props) => {
            <li><NavLink to="/create">New Project</NavLink></li>
            // eslint-disable-next-line jsx-a11y/anchor-is-valid
            <li><a onClick={props.signOut}>Log Out</a></li>
-           <li><NavLink to="/" className="btn btn-floating lighten-1">NN</NavLink></li>
+           <li><NavLink to="/" className="btn btn-floating lighten-1">
+               {props.profile.initials}
+           </NavLink></li>
         </ul>
     )
 }
